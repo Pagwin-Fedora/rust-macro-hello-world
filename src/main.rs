@@ -1,6 +1,6 @@
 extern crate mac;
 
-#[mac::make_str]
+#[mac::hello_and_goodbye]
 fn main() {
     println!("Function body");
 }

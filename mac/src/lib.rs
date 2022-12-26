@@ -7,7 +7,7 @@ use quote::{quote, ToTokens};
 use syn::{parse_macro_input, Item};
 
 #[proc_macro_attribute]
-pub fn make_str(_attr: TokenStream, tokens:TokenStream)->TokenStream{
+pub fn hello_and_goodbye(_attr: TokenStream, tokens:TokenStream)->TokenStream{
     let tmp = tokens.clone();
     let input = parse_macro_input!(tokens as Item);
     if let Item::Fn(mut fun) = input{
